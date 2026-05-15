@@ -3,9 +3,153 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Visita | Esculturas · Thomas Houseago</title>
+    <!-- CSS -->
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <!-- ICONOS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
+    <header class="header">
+        <a href="#">HOUSEAGO</a>
+        <nav id="menu">
+            <ul class="menu-desktop">
+                <li>
+                    <a href="index.html">Inicio</a>
+                </li>
+                <li>
+                    <a href="exposicion.html">Exposición</a>
+                </li>
+                <li>
+                    <a href="visita.html">Visita</a>
+                </li>
+            </ul>
+        </nav>
+        <input class="side-menu" type="checkbox" id="sideMenu">
+        <label class="icons-mobile" for="sideMenu">
+            <i class="fa-solid fa-bars"></i>
+            <i class="fa-solid fa-xmark"></i>
+        </label>
+        <nav id="movil">
+            <ul class="menu-movil">
+                <li>
+                    <a href="index.html">Inicio</a>
+                </li>
+                <li>
+                    <a href="exposicion.html">Exposición</a>
+                </li>
+                <li>
+                    <a href="visita.html">Visita</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <section id="hero-visita">
+        <div class="contenido">
+            <p>PLANIFICA TU VISITA</p>
+            <h1>Compra de entradas</h1>
+            <p>Jardín Banca March · Madrid</p>
+        </div>
+    </section>
+    <section id="compra">
+        <div class="compra-cont">
+            <p class="label">SELECCIONA TUS ENTRADAS</p>
+            <form id="entradas">
+                <label for="nombre">Nombre</label>
+                <input type="text" id="nombre" placeholder="" required>
+                <label for="email">Correo Electrónico</label>
+                <input type="email" id="email" placeholder="" required>
+                <div class="form-fila">
+                    <div class="group-form">
+                        <label for="fecha">Fecha de visita</label>
+                        <select id="fecha" required>
+                            <option value="f1">Jueves</option>
+                            <option value="f2">Viernes</option>
+                            <option value="f3">Sábado</option>
+                        </select>
+                    </div>
+                    <div class="group-form">
+                        <label for="horario">Horario</label>
+                        <select id="horario" required>
+                            <option value="t1">12:00 - 14:00</option>
+                            <option value="t2">14:00 - 16:00</option>
+                            <option value="t3">16:00 - 18:00</option>
+                            <option value="t4">18:00 - 20:00</option>
+                            <option value="t5">20:00 - 23:00</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-fila">
+                    <div class="group-form">
+                        <label for="general">Entrada General (8€)</label>
+                        <select id="general">
+                            <option value="g1">0</option>
+                            <option value="g2">1</option>
+                            <option value="g3">2</option>
+                            <option value="g4">3</option>
+                            <option value="g5">4</option>
+                            <option value="g6">5</option>
+                        </select>
+                    </div>
+                    <div class="group-form">
+                        <label for="reducida">Entrada Reducida (5€)</label>
+                        <select id="reducida">
+                            <option value="r1">0</option>
+                            <option value="r2">1</option>
+                            <option value="r3">2</option>
+                            <option value="r4">3</option>
+                            <option value="r5">4</option>
+                            <option value="r6">5</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="totalbox">
+                    <span>Total</span>
+                    <span id="total">0,00 €</span>
+                </div>
+                <button type="submit" class="btn-total">Confirmar reserva</button>
+            </form>
+        </div>
+    </section>
+    <section id="loc">
+        <div class="ubicacion">
+            <p class="label">CÓMO LLEGAR</p>
+            <div class="loc-fila">
+                <div class="direccion">
+                    <h4>Dirección</h4>
+                    <p>Jardín Banca March</p>
+                    <p>Calle de Castelló 75</p>
+                    <p>28006 Madrid</p>
+                </div>
+                <div class="transporte">
+                    <h4>Transporte Público</h4>
+                    <p>Metro: Núñez de Balboa (L5, L9)</p>
+                    <p>Bus: Líneas 1, 29, 52, 74, N2</p>
+                </div>
+            </div>
+            <div class="mapa">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3037.018499829652!2d-3.6837406230271825!3d40.43058925479416!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd4229002ecb36b9%3A0x82a84bb480dbfd48!2sJardin%20Banca%20March!5e0!3m2!1ses!2ses!4v1778883148964!5m2!1ses!2ses" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="f-contenido">
+            <img src="" alt="Banca March">
+            <p>© 2026 Banca March</p>
+            <p>Calle de Castelló 75, Madrid</p>
+        </div>
+        <div class="rs-icons">
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-whatsapp"></i>
+            <i class="fa-brands fa-x-twitter"></i>
+        </div>
+    </footer>
     
+    <!-- JS -->
+    <script src="js/script.js"></script>
 </body>
 </html>
