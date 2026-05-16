@@ -6,3 +6,100 @@
     --font-title: "Cormorant Garamond", serif;
     --font-text: "Lato", sans-serif;
 }
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--white-color);
+    color: var(--darkgreen-color);
+}
+
+header {
+    color: var(--white-color);
+    background-color: var(--darkgreen-color);
+    padding: 1.25rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+}
+
+header a {
+    text-decoration: none;
+    color: var(--white-color);
+    font-family: var(--font-title);
+    font-size: 1.15rem;
+}
+
+.logo {
+    letter-spacing: 0.5rem;
+    font-size: 1.5rem !important;
+    font-weight: 700;
+}
+
+.menu-desktop {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+#movil {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 64px;
+    left: 0;
+    background-color: var(--green-color);
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease-in-out;
+}
+
+#movil > .menu-movil {
+    list-style: none;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.75rem;
+    font-size: 2rem;
+}
+
+.icons-mobile {
+    cursor: pointer;
+    font-size: 1.5rem;
+    display: none;
+}
+
+.icons-mobile > .fa-xmark {
+    display: none;
+}
+
+#sideMenu {
+    display: none;
+}
+
+#movil {
+    display: none;
+}
+
+.side-menu:checked ~ #movil {
+    max-height: 100%;
+}
+
+.side-menu:checked ~.icons-mobile > .fa-bars {
+    display: none;
+}
+
+.side-menu:checked ~.icons-mobile > .fa-xmark {
+    display: block;
+}
+
