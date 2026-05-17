@@ -15,7 +15,6 @@
 
 body {
     background-color: var(--white-color);
-    color: var(--darkgreen-color);
 }
 
 header {
@@ -103,3 +102,71 @@ header a {
     display: block;
 }
 
+#hero {
+    background-image: url(../media/img/obras-11.webp);
+    background-size: cover;
+    background-position: center;
+    height: calc(100vh - 58px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(44, 42, 42, 0.5);
+}
+
+.contenido {
+    text-align: center;
+    color: var(--white-color);
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    z-index: 1;
+}
+
+.texto-hero {
+    font-family: var(--font-text);
+    font-weight: 400;
+    letter-spacing: 0.35rem;
+    color: var(--green-color);
+}
+
+h1 {
+    font-family: var(--font-title);
+    font-weight: 700;
+    font-size: 5rem;
+}
+
+.contenido > h2 {
+    color: var(--green-color);
+    font-family: var(--font-title);
+    font-weight: 700;
+    font-style: italic;
+    font-size: 2.5rem;
+}
+
+/* MEDIA QUERIES */
+@media screen and (max-width: 720px) {
+    
+    #menu {
+        display: none;
+    }
+
+    .icons-mobile {
+        display: block;
+    }
+
+    #movil {
+        display: block;
+    }
+}
