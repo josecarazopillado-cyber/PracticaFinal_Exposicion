@@ -401,6 +401,62 @@ footer {
     opacity: 0.7;
 }
 
+/* HTML EXPOSICIÓN */
+#hero-exp {
+    background-color: var(--darkgreen-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.subtitulo {
+    font-family: var(--font-title);
+    font-style: italic;
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: var(--green-color);
+    letter-spacing: 0.08rem;
+}
+
+#info-obras {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.parrafos {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.parrafos p {
+    font-family: var(--font-text);
+    font-size: 1rem;
+    font-weight: 300;
+    color: var(--darkgreen-color);
+}
+
+.galeria {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 1em 0;
+    gap: 1em;
+}
+
+.galeria > figure {
+    position: relative;
+    flex: 0 1 calc(33% - 0.5em);
+}
+
+.galeria > figure > figcaption {
+    padding: 1rem 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+}
+
 /* MEDIA QUERIES */
 @media screen and (max-width: 720px) {
     
