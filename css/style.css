@@ -38,7 +38,6 @@ header a {
     text-decoration: none;
     color: var(--white-color);
     font-family: var(--font-title);
-    font-size: 1.15rem;
 }
 
 .logo {
@@ -629,6 +628,20 @@ footer {
 }
 
 /* MEDIA QUERIES */
+@media screen and (max-width: 900px) {
+    .mini-galeria > figure {
+        flex: 0 1 calc(50% - 0.5em);
+    }
+
+    .galeria > figure {
+        flex: 0 1 calc(50% - 0.5em);
+    }
+
+    h1 {
+        font-size: 4rem;
+    }
+}
+
 @media screen and (max-width: 720px) {
     
     #menu {
@@ -642,4 +655,61 @@ footer {
     #movil {
         display: block;
     }
+
+    h1 {
+        font-size: 3rem;
+    }
+
+    .botones {
+        flex-direction: column;
+        align-items: center;
+        gap: 0.75rem;
+    }
+
+    .texto-hero {
+        font-size: 0.75rem;
+    }
+
+    .abt-contenido {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .texto {
+        width: 100%;
+    }
+
+    .foto {
+        width: 80%;
+    }
+
+    .mini-galeria > figure {
+        flex: 100%;
+    }
+
+    .mini-galeria > figure > figcaption {
+        padding: 1rem 2rem 2rem 2rem;
+    }
+
+   .thomas-cont {
+        flex-direction: column;
+        gap: 2rem;
+   }
+
+   .thomas-cont figure {
+        flex: 0 0 auto;
+        width: 100%;
+   }
+
+   .galeria > figure {
+        flex: 100%;
+   }
+
+   .form-fila {
+        flex-direction: column;
+   }
+
+   .mapa iframe {
+        height: 250px;
+   }
 }
